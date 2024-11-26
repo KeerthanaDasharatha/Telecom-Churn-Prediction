@@ -3,7 +3,7 @@
 In this EDA, the objective is determine if there is a factor that leads the customers to cancel the services and, if true, what factor is the responsible.
 
 ## **Data Extraction**
-For EDA(Exploratory Data Analysis) project,we will be utilizing the "Customer-Churn-Analysis" dataset.The original source of this data is article titled "Telco Customer Churn"
+For EDA(Exploratory Data Analysis) project,we will be utilizing the "Telecom-Churn-Prediction" dataset.The original source of this data is article titled "Telco Customer Churn"
 
 
 
