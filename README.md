@@ -5,6 +5,13 @@ In this EDA, the objective is determine if there is a factor that leads the cust
 ## **Data Extraction**
 For EDA(Exploratory Data Analysis) project,we will be utilizing the "Telecom-Churn-Prediction" dataset.The original source of this data is article titled "Telco Customer Churn"
 
+## **Business Questions**
+1. What specific actions can the company take to identify and address the root causes of customer churn?
+ 
+2. What role does pricing play in churn, and how can the company adjust pricing plans to stay competitive while retaining customers?
+ 
+3. How is customer churn impacting the company's revenue and long-term growth?
+
 
 
 ## **Data**
