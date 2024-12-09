@@ -2,6 +2,13 @@
 Telco_data <- read_csv("C:/Users/HP/Downloads/Telco-Customer-Churn.csv")
 View(Telco_Customer_Churn)
 
+# Installing and loading the packages
+install.packages("tidyverse")
+install.packages("ggplot")
+library(tidyverse)
+library(ggplot2)
+
+
 #Visualizing statistical information about our data to identify basic distribution(average,median etc)
 summary(Telco_data)
 str(Telco_data)
@@ -27,9 +34,6 @@ sum(is.na(Telco_data))
 #Count of different levels from the 'Churn' column
 Telco_data %>% count(Churn)
 
-# Installing and loading the packages
-library(tidyverse)
-library(ggplot2)
 
 #MonthlyCharges Boxplot
 ggplot(Telco_data,aes(x="",y=MonthlyCharges))+
