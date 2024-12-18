@@ -31,7 +31,7 @@ The data for this project is stored in a R database and consists of a table with
 
 **PhoneService** :	Indicates if the customer has phone service (1 = Yes, 0 = No).
 
-**MultipleLines** :	Indicates if the customer has multiple phone lines (Yes, No, No phone service).
+**MultipleLines** :	Indicates if the customer has multiple phone lines (Yes, No).
 
 **InternetService** :	Type of internet service provided (e.g., DSL, Fiber optic, No).
 
@@ -91,7 +91,7 @@ First, let's make a bar chart to see how many clients canceled the service and h
 ![image](https://github.com/user-attachments/assets/85f983e1-9c8a-4c1f-963c-f16ae7e99b76)
 
 
-As we can see in this visualization, the churn represents less than 30% of total clients
+As we can see in this visualization, the churn represents less than 26.5% of total clients
 
 Next, we'll evaluate if some demographic variables (gender, SeniorCitizen and Partner) are directly related to the churn.
 
@@ -138,8 +138,7 @@ This visualization also shows a relation between the electronic check payment me
 
 ![image](https://github.com/user-attachments/assets/6b401acc-d514-43d5-982d-ae003cf14c75)
 
-This distribution chart shows that there is a strong correlation between monthly charges and churn. More expensive monthly charges lead to churn more often. The pattern only diverge in some specific areas, like monthly charges near to 62.5 or higher than 112.5.
-
+This distribution chart shows that there is a strong correlation between monthly charges and churn. More expensive monthly charges lead to churn more often. 
 **total charges by churn boxplot**
 
 ![image](https://github.com/user-attachments/assets/77f3a38c-0ad8-431d-aa20-f73619045a0b)
