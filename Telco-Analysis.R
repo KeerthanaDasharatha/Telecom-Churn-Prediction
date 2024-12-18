@@ -31,11 +31,7 @@ Telco_data$TotalCharges<-ifelse(is.na(Telco_data$TotalCharges),
 #Using the sum() function to verifyif the missing values were properly replaced
 sum(is.na(Telco_data))
 
-#Count of different levels from the 'Churn' column
-Telco_data %>% 
-  group_by(Churn) %>% 
-  summarise(count=n()) %>% 
-  mutate(percent=prop.table(count)*100)
+
 
 #MonthlyCharges Boxplot
 ggplot(Telco_data,aes(x="",y=MonthlyCharges))+
@@ -47,9 +43,14 @@ ggplot(Telco_data,aes(x="",y=TotalCharges))+
   geom_boxplot(fill="lightgreen")+
   labs(title="monthlyCharges Boxplot",x="",y="TotalCharges")
 
-
+#Count of different levels from the 'Churn' column
+Telco_data %>% 
+  group_by(Churn) %>% 
+  summarise(count=n()) %>% 
+  mutate(percent=prop.table(count)*100)
+  
 #Churn bar chart
-ggplot(telco_data, aes(x = Churn)) +
+ggplot(Telco_data, aes(x = Churn)) +
   geom_bar(fill = "steelblue") +
   labs(title = "Churn Distribution", x = "Churn", y = "Count")
 
