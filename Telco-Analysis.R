@@ -32,8 +32,10 @@ Telco_data$TotalCharges<-ifelse(is.na(Telco_data$TotalCharges),
 sum(is.na(Telco_data))
 
 #Count of different levels from the 'Churn' column
-Telco_data %>% count(Churn)
-
+Telco_data %>% 
+  group_by(Churn) %>% 
+  summarise(count=n()) %>% 
+  mutate(percent=prop.table(count)*100)
 
 #MonthlyCharges Boxplot
 ggplot(Telco_data,aes(x="",y=MonthlyCharges))+
